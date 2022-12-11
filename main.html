@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Project Coverter</title>
+        <link rel="stylesheet" href="/style.css">
+        <script src="/code.js"></script>
+    </head>
+    <body id="body">
+        <form class="form" onsubmit="return convertNumbers()">
+        <div class="converter-body">
+            <h1>Converter</h1>
+            <div id="unitnav" class="form-row">
+                    <div class="form-group col">
+                        <label for="inputType">FROM</label>
+                        <select id="inputType" class="form-control" >
+                            <option value="Decimal">Decimal</option>
+                            <option value="HexaDecimal">HexaDecimal</option>
+                            <option value="Octal">Octal</option>
+                            <option value="Binary">Binary</option>
+                        </select> 
+                    </div>
+                    <div class="form-froup col">
+                        <label for="resultType">To</label>
+                        <select id="resultType" class="form-control">
+                            <option value="Decimal">Decimal</option>
+                            <option value="HexaDecimal">HexaDecimal</option>
+                            <option value="Octal">Octal</option>
+                            <option value="Binary">Binary</option>
+                        </select>
+                    </DIV>
+                </div>
+            </div>
+           
+          
+            <DIV> Enter your number-       <input type="text" placeholder="Input" id="input" class="input"></DIV>
+            <DIV> Number after conversion- <input type="text" placeholder="Output" id="result"  class="input"></div>
+        </div>
+    <div>
+        <input type="button" value="CHANGE" class="btn btn-success" onclick="myResult()" >
+        <input type="button" value="SWAP" onclick="swapKaro()" >
+        
+    </div></form>
+        <script src="/code.js"></script>
+    </body>
+</html>
